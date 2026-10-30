@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Pitlane Workshop OS</title>
+<meta name="description" content="How Pitlane Workshop OS collects, uses and deletes data, including WhatsApp Business data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --text: #111827;
+    --muted: #5b6474;
+    --border: #e5e7eb;
+    --brand: #111827;
+    --accent: #f59e0b;
+    --accent-soft: #fef3c7;
+    --link: #b45309;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0f17;
+      --surface: #121826;
+      --text: #e5e7eb;
+      --muted: #9aa3b2;
+      --border: #232b3b;
+      --brand: #0b0f17;
+      --accent: #f59e0b;
+      --accent-soft: #2a2010;
+      --link: #fbbf24;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.7 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); }
+  header.hero {
+    background: #111827;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  header.hero::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 16px;
+    background:
+      conic-gradient(var(--accent) 25%, transparent 0 50%, var(--accent) 0 75%, transparent 0)
+      0 0 / 16px 16px;
+    opacity: .9;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+  .bar {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; padding: 20px 0;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .2px; }
+  .mark {
+    width: 40px; height: 40px; border-radius: 10px;
+    background: #1f2937; display: grid; place-items: center;
+    font-weight: 700; font-size: 22px; color: #fff;
+    box-shadow: inset 0 -4px 0 var(--accent);
+  }
+  .lang { display: flex; gap: 6px; }
+  .lang a {
+    color: #fff; text-decoration: none; font-size: 14px; font-weight: 500;
+    padding: 6px 12px; border: 1px solid #374151; border-radius: 999px;
+  }
+  .lang a:hover { border-color: var(--accent); }
+  .hero-body { padding: 36px 0 64px; }
+  .hero h1 { margin: 0 0 8px; font-size: clamp(30px, 5vw, 42px); line-height: 1.15; }
+  .hero p { margin: 0; color: #cbd2dc; }
+  .chip {
+    display: inline-block; margin-top: 16px; font-size: 13px; font-weight: 500;
+    padding: 4px 12px; border-radius: 999px; background: #1f2937; color: #e5e7eb;
+  }
+  main { padding: 40px 0 64px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: clamp(22px, 4vw, 40px);
+    margin-bottom: 28px;
+  }
+  .toc {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 6px 20px; padding: 0; margin: 0 0 8px; list-style: none; counter-reset: toc;
+  }
+  .toc li { counter-increment: toc; }
+  .toc a { text-decoration: none; color: var(--muted); font-size: 15px; }
+  .toc a::before { content: counter(toc) ". "; color: var(--accent); font-weight: 600; }
+  .toc a:hover { color: var(--text); }
+  h2 {
+    font-size: 20px; margin: 36px 0 10px; padding-top: 4px;
+    display: flex; align-items: center; gap: 10px; scroll-margin-top: 16px;
+  }
+  h2 .n {
+    flex: none; width: 28px; height: 28px; border-radius: 8px;
+    background: var(--accent-soft); color: var(--link);
+    display: inline-grid; place-items: center; font-size: 14px; font-weight: 700;
+  }
+  .card > h2:first-of-type { margin-top: 8px; }
+  p, li { color: var(--text); }
+  ul { padding-inline-start: 22px; margin: 8px 0; }
+  li { margin: 4px 0; }
+  .muted { color: var(--muted); }
+  .callout {
+    border-inline-start: 4px solid var(--accent);
+    background: var(--accent-soft);
+    padding: 14px 18px; border-radius: 10px; margin: 14px 0;
+  }
+  .callout p { margin: 0; }
+  .contact {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
+    margin-top: 10px;
+  }
+  .btn {
+    display: inline-block; text-decoration: none; font-weight: 600;
+    background: #111827; color: #fff; padding: 10px 18px; border-radius: 10px;
+  }
+  @media (prefers-color-scheme: dark) { .btn { background: var(--accent); color: #111827; } }
+  [dir="rtl"] { font-family: Cairo, Tahoma, "Segoe UI", sans-serif; line-height: 1.9; }
+  footer { border-top: 1px solid var(--border); padding: 24px 0 40px; font-size: 14px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; color: var(--muted); }
+  @media (max-width: 520px) { .lang a { padding: 5px 10px; } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="bar">
+      <div class="brand"><span class="mark">P</span><span>Pitlane Workshop OS</span></div>
+      <nav class="lang" aria-label="Language">
+        <a href="#en" hreflang="en">English</a>
+        <a href="#ar" hreflang="ar" lang="ar">العربية</a>
+      </nav>
+    </div>
+    <div class="hero-body">
+      <h1>Privacy Policy</h1>
+      <p>How Pitlane handles workshop and customer data, including WhatsApp Business data.</p>
+      <span class="chip">Last updated: 30 October 2026</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- English -->
+  <article class="card" id="en" lang="en">
+    <p>Pitlane Workshop OS (“Pitlane”, “we”, “us”) is a management system for car repair workshops. This policy explains what data Pitlane processes when a workshop uses Pitlane and connects its WhatsApp Business number through Meta’s WhatsApp Business Platform, and how anyone can ask us to delete their data.</p>
+
+    <ol class="toc">
+      <li><a href="#en-1">Who this policy covers</a></li>
+      <li><a href="#en-2">Data we process</a></li>
+      <li><a href="#en-3">How we use data</a></li>
+      <li><a href="#en-4">Sharing and service providers</a></li>
+      <li><a href="#en-5">Security</a></li>
+      <li><a href="#en-6">Retention</a></li>
+      <li><a href="#en-7">Data deletion</a></li>
+      <li><a href="#en-8">Contact</a></li>
+    </ol>
+
+    <h2 id="en-1"><span class="n">1</span>Who this policy covers</h2>
+    <ul>
+      <li><strong>Workshops</strong> (our customers) and the staff who use Pitlane.</li>
+      <li><strong>Workshop customers</strong> who exchange WhatsApp messages with a workshop that uses Pitlane.</li>
+    </ul>
+
+    <h2 id="en-2"><span class="n">2</span>Data we process</h2>
+    <ul>
+      <li><strong>WhatsApp Business account data</strong> that the workshop authorizes through Meta’s Embedded Signup: WhatsApp Business Account ID, phone number ID, display phone number, verified business name, and an access token issued by Meta.</li>
+      <li><strong>Messages</strong> sent to and from the workshop’s WhatsApp number: sender phone number, WhatsApp profile name, message content, timestamps and delivery status.</li>
+      <li><strong>Workshop account data</strong>: staff names, email addresses and roles inside Pitlane.</li>
+    </ul>
+
+    <h2 id="en-3"><span class="n">3</span>How we use data</h2>
+    <p>Only to provide the service to the workshop: showing customer conversations in the workshop’s Inbox, sending the workshop’s replies, and linking conversations to the workshop’s customers and vehicles.</p>
+    <div class="callout"><p>We do <strong>not</strong> sell data, use it for advertising, or use it to build profiles.</p></div>
+
+    <h2 id="en-4"><span class="n">4</span>Sharing and service providers</h2>
+    <p>We share data only with the providers needed to run the service:</p>
+    <ul>
+      <li><strong>Meta Platforms</strong> (WhatsApp Business Platform): to send and receive WhatsApp messages.</li>
+      <li><strong>Supabase</strong>: database and server hosting.</li>
+    </ul>
+
+    <h2 id="en-5"><span class="n">5</span>Security</h2>
+    <p>Access tokens are stored encrypted and are never shown in the app. Each workshop can access only its own data, and access inside a workshop is restricted by role.</p>
+
+    <h2 id="en-6"><span class="n">6</span>Retention</h2>
+    <p>Data is kept while the workshop uses Pitlane. When a workshop disconnects its WhatsApp number, Pitlane deletes the stored access token immediately and stops receiving messages for that number.</p>
+
+    <h2 id="en-7"><span class="n">7</span>Data deletion</h2>
+    <p>You can ask us to delete your data at any time:</p>
+    <ul>
+      <li><strong>Workshops</strong>: disconnect the number from <em>Settings → WhatsApp</em>, then email us from the account owner’s email address asking for account deletion.</li>
+      <li><strong>Workshop customers</strong>: email us with your phone number and the name of the workshop you contacted.</li>
+    </ul>
+    <p>We confirm the request and complete the deletion within <strong>30 days</strong>.</p>
+
+    <h2 id="en-8"><span class="n">8</span>Contact</h2>
+    <p>Questions about this policy or your data:</p>
+    <div class="contact">
+      <a class="btn" href="mailto:ap56store@gmail.com?subject=Pitlane%20privacy%20request">ap56store@gmail.com</a>
+    </div>
+  </article>
+
+  <!-- Arabic -->
+  <article class="card" id="ar" lang="ar" dir="rtl">
+    <p>Pitlane Workshop OS («Pitlane» أو «نحن») نظام لإدارة ورش صيانة السيارات. توضّح هذه السياسة البيانات التي يعالجها Pitlane عندما تستخدمه الورشة وتربط رقم واتساب للأعمال الخاص بها عبر منصة WhatsApp Business من Meta، وكيف يمكن لأي شخص أن يطلب حذف بياناته.</p>
+
+    <ol class="toc">
+      <li><a href="#ar-1">من تشملهم السياسة</a></li>
+      <li><a href="#ar-2">البيانات التي نعالجها</a></li>
+      <li><a href="#ar-3">كيف نستخدم البيانات</a></li>
+      <li><a href="#ar-4">المشاركة ومقدّمو الخدمة</a></li>
+      <li><a href="#ar-5">الأمان</a></li>
+      <li><a href="#ar-6">مدة الاحتفاظ</a></li>
+      <li><a href="#ar-7">حذف البيانات</a></li>
+      <li><a href="#ar-8">التواصل</a></li>
+    </ol>
+
+    <h2 id="ar-1"><span class="n">1</span>من تشملهم السياسة</h2>
+    <ul>
+      <li><strong>الورش</strong> (عملاؤنا) والموظفون الذين يستخدمون Pitlane.</li>
+      <li><strong>عملاء الورش</strong> الذين يتبادلون رسائل واتساب مع ورشة تستخدم Pitlane.</li>
+    </ul>
+
+    <h2 id="ar-2"><span class="n">2</span>البيانات التي نعالجها</h2>
+    <ul>
+      <li><strong>بيانات حساب واتساب للأعمال</strong> التي تأذن بها الورشة عبر خدمة التسجيل المدمج من Meta: معرّف حساب واتساب للأعمال، ومعرّف رقم الهاتف، ورقم الهاتف المعروض، والاسم التجاري الموثّق، ورمز وصول صادر من Meta.</li>
+      <li><strong>الرسائل</strong> المرسلة من رقم واتساب الورشة وإليه: رقم هاتف المرسل، واسم ملفه على واتساب، ومحتوى الرسالة، والتوقيت، وحالة التسليم.</li>
+      <li><strong>بيانات حساب الورشة</strong>: أسماء الموظفين وبريدهم الإلكتروني وأدوارهم داخل Pitlane.</li>
+    </ul>
+
+    <h2 id="ar-3"><span class="n">3</span>كيف نستخدم البيانات</h2>
+    <p>فقط لتقديم الخدمة للورشة: عرض محادثات العملاء في صندوق الوارد الخاص بالورشة، وإرسال ردود الورشة، وربط المحادثات بعملاء الورشة وسياراتهم.</p>
+    <div class="callout"><p>نحن <strong>لا</strong> نبيع البيانات، ولا نستخدمها في الإعلانات، ولا في بناء ملفات تعريفية.</p></div>
+
+    <h2 id="ar-4"><span class="n">4</span>المشاركة ومقدّمو الخدمة</h2>
+    <p>لا نشارك البيانات إلا مع مقدّمي الخدمة اللازمين لتشغيلها:</p>
+    <ul>
+      <li><strong>Meta Platforms</strong> (منصة WhatsApp Business): لإرسال رسائل واتساب واستقبالها.</li>
+      <li><strong>Supabase</strong>: قاعدة البيانات واستضافة الخوادم.</li>
+    </ul>
+
+    <h2 id="ar-5"><span class="n">5</span>الأمان</h2>
+    <p>تُخزَّن رموز الوصول مشفّرة ولا تظهر في التطبيق أبدًا. كل ورشة لا ترى إلا بياناتها، والوصول داخل الورشة محدد حسب دور كل موظف.</p>
+
+    <h2 id="ar-6"><span class="n">6</span>مدة الاحتفاظ</h2>
+    <p>نحتفظ بالبيانات طوال مدة استخدام الورشة لـ Pitlane. عندما تفصل الورشة رقم واتساب الخاص بها، يحذف Pitlane رمز الوصول المخزّن فورًا ويتوقف عن استقبال رسائل هذا الرقم.</p>
+
+    <h2 id="ar-7"><span class="n">7</span>حذف البيانات</h2>
+    <p>يمكنك طلب حذف بياناتك في أي وقت:</p>
+    <ul>
+      <li><strong>الورش</strong>: افصل الرقم من <em>الإعدادات ← واتساب</em>، ثم راسلنا من البريد الإلكتروني لمالك الحساب واطلب حذف الحساب.</li>
+      <li><strong>عملاء الورش</strong>: راسلنا برقم هاتفك واسم الورشة التي تواصلت معها.</li>
+    </ul>
+    <p>نؤكد استلام الطلب ونُتم الحذف خلال <strong>30 يومًا</strong>.</p>
+
+    <h2 id="ar-8"><span class="n">8</span>التواصل</h2>
+    <p>لأي استفسار عن هذه السياسة أو عن بياناتك:</p>
+    <div class="contact">
+      <a class="btn" href="mailto:ap56store@gmail.com?subject=Pitlane%20privacy%20request" dir="ltr">ap56store@gmail.com</a>
+    </div>
+  </article>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Pitlane Workshop OS</span>
+    <a href="#en">Back to top</a>
+  </div>
+</footer>
+
+</body>
+</html>
